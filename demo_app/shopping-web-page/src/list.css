@@ -1,0 +1,23 @@
+.horizontal-scroll-container {
+  display: flex;            /* Align items in a row */
+  overflow-x: auto;         /* Enable horizontal scrolling */
+  padding: 10px 0;          /* Optional: Add vertical padding */
+  gap: 10px;                /* Optional: Space between items */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.item {
+  flex: 0 0 auto;           /* Prevent item from growing or shrinking */
+  width: 200px;             /* Set the width of each item */
+  height: 250px;            /* Set the height of each item */
+  border: 1px solid #ddd;   /* Item border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-content {
+  font-size: 16px;
+  font-weight: bold;
+}
